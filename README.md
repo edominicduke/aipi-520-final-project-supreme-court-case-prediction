@@ -15,18 +15,18 @@
 4) Impute columns with <20% of values missing with a negative value (ex. -10) to denote missing value
 5) Remove instances of cases where any of the feature values are missing (rows where at least one of the values in any of the other columns are missing)
 
-# Feature Selection
+# Feature Selection (Training)
 - Preprocessed data was split into Train/Validation/Test splits
 - A correlation matrix was created to relate all the features of the Train data to each other (prevent data leakage)
 - A mutual information matrix was computed to determine which of the features in the pairs would be removed
 
-# Evaluation Metrics
+# Evaluation Metrics (Training)
 1) Accuracy
 2) Log Loss
 
-# Evaluation Strategy
+# Evaluation Strategy (Training)
 - A separate validation set was chosen over a K-Fold cross-validation approach since there are ≅10000 samples in the Train data (high computational complexity)
 
-# Models
+# Models (Training)
 - Non Deep Learning Model: Gradient Boosting Classifier
 - Deep Learning Model: Feedforward Neural Network
